@@ -12,6 +12,6 @@ export const readEvents = () => async dispatch => {
 }
 
 export const postEvent = values => async dispatch => {
-  const response = await axios.get(`${ROOT_URL}/events${QUERYSTRING}`, values)
+  const response = await axios.post(`${ROOT_URL}/events${QUERYSTRING}`, values)
   dispatch({ type: CREATE_EVENT, response })
 }
