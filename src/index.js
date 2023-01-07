@@ -19,7 +19,7 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          {/* <Route exact path="/events/new" element={<EventsNew />} /> */}
+          <Route exact path="/events/new" element={<EventsNew />} />
           <Route exact path="/" element={<EventsIndex />} />
         </Routes>
       </BrowserRouter>
